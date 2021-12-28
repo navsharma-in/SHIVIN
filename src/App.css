@@ -2,9 +2,18 @@
   text-align: center;
 }
 
-.card-img-top {
+.card mb-3 {
   height: 70vmin;
   width: 20vmin;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.list-group-item{
+
+  text-align: left;
 }
 
 .App-logo {
