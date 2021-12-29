@@ -4,8 +4,14 @@ import axios from 'axios'
 const Home = () => {
     const [users, setUser] = useState([]);
     useEffect(() => {
-        console.log("Or Bhai Kya Challlaa")
+        loadUsers();
     }, []);
+
+    const loadUsers = async () => {
+
+        const results = await axios.get("http://localhost:3001/users"); 
+        console.log("results")
+    }
     return (
         <div className='container'>
         <img src={logo} className="App-logo" alt="logo" />
