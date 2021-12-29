@@ -9,9 +9,9 @@ const Home = () => {
 
     const loadUsers = async () => {
 
-        const results = await axios.get("http://localhost:3001/users"); 
-        console.log("results")
-    }
+        const results = await axios.get("http://localhost:3001/users");
+        setUser(results.data);
+    };
     return (
         <div className='container'>
         <img src={logo} className="App-logo" alt="logo" />
